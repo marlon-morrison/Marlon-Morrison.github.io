@@ -1,0 +1,113 @@
+.background img {
+    position: absolute;
+    width: 864px;
+    height: 630px;
+    right: 0;
+}
+header {
+    background: #790a02; 
+}
+header a {
+    color: #fff;
+    text-transform: capitalize;
+}
+header ul {
+    padding: 15px 0;
+    text-align: center;
+}
+header li {
+    display: inline;
+    padding: 10px;
+    font-size: 25px;
+}
+.hero {
+    height: 635px;
+    z-index: 1;
+    background: #888;
+} 
+.pic img{
+    width: 289px;
+    height: 269px;
+    margin-top: 43px;
+    border: 2px solid #790a02;
+}
+.hero img {
+    border-radius: 50%;
+}
+.hero h1 {
+    text-transform: capitalize;
+    color: #444;
+    border-left: 2px solid #790a02
+}
+.down {
+    margin-top: 175px;
+}
+.hero p {
+    color: #111;
+}
+.hidden_text {
+    width: 63px;
+    margin-top: 72px;
+    margin-left: 114px;
+}
+.coin {
+    height: 298px;
+    left: 145px;
+    position: absolute;
+    transform: translateX(-50%) translateY(7%);
+    width: 344px;
+} 
+.front {
+border-radius: 50%;
+backface-visibility: hidden;
+cursor: pointer;
+height: inherit;
+position: absolute;
+transition: transform 1000ms cubic-bezier(0.85, 0.66, 0, 1.4);
+width: inherit;
+}
+.front {
+background-color: #888;
+transform: rotateY(0deg);
+} 
+.front:hover {
+    transform: rotateY(225deg);
+}
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+main {
+    background: #444;
+    z-index: 2;
+}
+main img{
+    height: 100px;
+    padding: 20px;
+    background: #790a02;
+}
+main p {
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.project-title p {
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 45px;
+    text-decoration: underline;
+}
+.project{
+    margin: 55px;
+    width: 475px;
+    padding: 0px 0px 15px;
+    border: 1px solid #000;
+    box-shadow: 5px 10px 10px #000, -5px 0px 10px #000;
+  }
+.project-pic{
+    
+  }
