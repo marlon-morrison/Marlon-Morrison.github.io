@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio page</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -26,22 +27,25 @@
             </div>
         </div>
     </header>
+    
+    <div class="background">
+        <img class="img-responsive hidden-xs hidden-sm" src="media/cool.jpg" alt="">
+    </div>
     <div class="hero">
-        <div class="background">
-            <img class="img-responsive hidden-xs hidden-sm" src="media/black-and-white-blurred-background-board-game-1576849.jpg" alt="">
-        </div>
+     
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 pic">
-                    <img src="media/Marlon Morrison (2).jpg" alt="">
+                    <img class="img-responsive" src="media/Marlon Morrison (2).jpg" alt="">
                 </div>
                 <div class="col-sm-6 down">
                     <h1>marlon morrison</h1>
                     <h2>web developer</h2>
+                    
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12 pic">
+                <div class="col-sm-12 hidden-xs hidden-sm pic">
                     <img src="media/code-coder-coding-270404.jpg" alt="">
                     <span class="coin"> 
                         <span class="front"></span>
@@ -57,7 +61,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2>about me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos at cumque labore magni, tempora voluptatibus omnis animi consectetur, neque iusto modi saepe culpa ipsam quidem sit, non atque mollitia tempore.</p>
+                    <p>I'm Marlon a junior web developer that has learn HTML and CSS with diffient types of frameworks. In this line of work all new projects and themes are amazing for me to see. To always ask how it works and ask what I need to do to learn it.</p>
                 </div>
             </div>
         </div>
@@ -71,7 +75,7 @@
                     <p>projects</p>
                 </div>
             </div>
-            <div class="row ">
+            <div class="row hidden-xs hidden-sm">
                 <div class="col-sm-5 project">
                     <a href="file:///C:/Users/MSCA/Desktop/lessons/Detriot/detriot.html" target="blank">
                         <div class="project-pic" >
@@ -87,7 +91,7 @@
                             <img class="img-responsive" src="media/airbox.jpg" alt="project">
                         </div> 
                         <p>airbox page</p>
-                        <span><a class="side" href="view-source:file:///C:/Users/MSCA/Desktop/lessons/airbox/airbox.html"><p>code &lt;/&gt;</p></a></span>
+                        <span><a class="side" href="#link" target="blank"><p>code &lt;/&gt;</p></a></span>
                     </a>
                 </div>
             </div>
@@ -107,7 +111,7 @@
                             <img class="img-responsive" src="media/bloom.jpg" alt="project">
                         </div>
                         <p>bloom landing page</p>
-                        <span><a class="side" href="Users/MSCA/Desktop/lessons/BloomLandingPage/bloomland.html" ><p>code &lt;/&gt;</p></a></span>
+                        <span><a class="side" href="#link" ><p>code &lt;/&gt;</p></a></span>
                     </a>
                 </div>
             </div>
@@ -142,13 +146,19 @@
         <a name="contact"></a>
         <div class="container">
             <div class="row">
-                <div class="col-sm-8">
-                    <p>ssmorrison0@gmail.com</p>
-                </div>
-                <div class="col-sm-4">
+                <div class=" hidden-md hidden-lg hidden-sm col-xs-12 col-sm-12">
                     <ul>
-                        <li><a href="#link"><i class="fab fa-github"></i></a></li>
-                        <li> <a href="#link"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/marlon-morrison"><i class="fab fa-github"></i></a></li>
+                        <li> <a href="https://www.linkedin.com/in/marlon-morrison-b20aab189/"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class=" col-xs-12 col-sm-9 col-md-9  col-lg-9">
+                     <p>ssmorrison0@gmail.com</p>
+                </div>
+                <div class=" hidden-xs  col-md-3 col-lg-3">
+                    <ul>
+                        <li><a href="https://github.com/marlon-morrison" target="blank"><i class="fab fa-github"></i></a></li>
+                        <li> <a href="https://www.linkedin.com/in/marlon-morrison-b20aab189/" target="blank"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>

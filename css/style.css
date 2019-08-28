@@ -7,6 +7,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    font-family: 'Exo', sans-serif;
 }
 header a {
     color: #fff;
@@ -15,6 +16,7 @@ header a {
 header a:hover {
     text-decoration: none;
     color: #000;
+    transition: all 0.4s ease-in-out;
 }
 header ul {
     padding: 15px 0;
@@ -26,40 +28,55 @@ header li {
     font-size: 25px;
 }
 .hero {
-    height: 635px;
+
     z-index: 1;
     background: #888;
 } 
 .background img {
     position: absolute;
-    width: 864px;
-    height: 630px;
+    width: 800px;
+    height: 635px;
+    border-bottom-left-radius: 500px;
     right: 0;
+}
+@media (max-width: 1025px) {
+    .background img {
+        width: 671px;
+        height: 573px;
+    }
+}
+.pic {
+    padding-bottom: 20px;
 }
 .pic img{
     width: 289px;
-    height: 269px;
-    margin-top: 43px;
-    border: 2px solid #790a02;
+    height: 286px;
+    margin-top: 30px;
+    border: 4px solid #790a02;
 }
 .hero img {
     border-radius: 50%;
+    box-shadow: 10px 15px 10px #000, -5px 0px 10px #000;
 }
 .hero h1 {
     text-transform: capitalize;
-    color: #444;
-    border-left: 2px solid #790a02
+    color: #222;
+    border-left: 5px solid #790a02;
+    font-family: 'Exo', sans-serif;
 }
 .hero h2 {
     text-transform: capitalize;
-    font-size: 25px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: -15px;
+    font-family: 'Exo', sans-serif;
 }
 .down {
-    margin-top: 175px;
-    padding-left: 140px;
+    margin-top: 55px;
+    padding-left: 41px;
 }
 .hero p {
-    color: #111;
+    color: #fff;
 }
 .hidden_text {
     width: 63px;
@@ -83,24 +100,26 @@ header li {
     width: inherit;
 }
 .front {
-background: #888;
-transform: rotateY(0deg);
+    background: #888;
+    transform: rotateY(0deg);
 } 
 .front:hover {
     transform: rotateY(225deg);
+    background: linear-gradient(-21deg, #999,#888 );
 }
 .about {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     background: #5A5E60;
-    border-bottom: 3px solid #790a02;
+    border-bottom: 5px solid #790a02;
 }
 .about h2 {
     text-transform: capitalize;
     text-decoration: underline;
     font-size: 40px;
     color: #fff;
+    font-family: 'Exo', sans-serif;
 }
 .about p {
     color: #fff;
@@ -109,6 +128,7 @@ main {
     background: #444;
     z-index: 2;
     padding: 20px;
+    font-family: 'Exo', sans-serif;
    
 }
 main img{
@@ -130,20 +150,36 @@ main p {
     text-decoration: underline;
 }
 .project{
-    margin: 30px;
+    margin: 48px;
     padding: 0px 0px 15px;
     border: 10px solid #790a02;
-    box-shadow: 5px 10px 10px #000, -5px 0px 10px #000;
+    box-shadow: 10px 15px 10px #000, -5px 0px 10px #000;
     overflow: hidden;
-  }
+}
+
+@media (min-width: 1002px) and (max-width: 1200px) {
+    .project {
+        margin: 40px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1000px) {
+   .project {
+        margin: 31px;
+   }
+}
+
 .project :hover {
     left: 0;
     text-decoration: none;
 }
 .project p:hover {
     color: #000;
-    transition: all 0.3s ease-in-out;
-    
+    transition: all 0.5s ease-in-out;
+}
+.project a:hover {
+    color: #000;
+    transition: all 0.5s ease-in-out;
+    box-shadow: -6px 15px 10px #000, 13px 10px 10px #000;
 }
 .side {
     height: 47px;
@@ -152,7 +188,7 @@ main p {
     padding: 0 5px;
     top: 6%;
     left: -54px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -161,19 +197,29 @@ main p {
 }
 .side p:hover{
  color: #000;
- transition: all 0.3s ease-in-out;
+ transition: all 0.4s ease-in-out;
 }
 footer {
     background: #790a02;
+    font-family: 'Exo', sans-serif;
+}
+@media (max-width: 426px) {
+    footer {
+        text-align: center;
+    }
 }
 footer p {
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     padding-top: 15px;
 }
 footer a {
     color: #fff;
     text-transform: capitalize;
+}
+footer a:hover {
+    color: #000;
+    transition: all 0.4s ease-in-out;
 }
 footer ul {
     padding: 15px 0;
@@ -182,5 +228,5 @@ footer ul {
 footer li {
     display: inline;
     padding: 10px;
-    font-size: 25px;
+    font-size: 35px;
 }
