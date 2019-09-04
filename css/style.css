@@ -3,8 +3,9 @@ html{
     scroll-behavior: smooth;
 }
 body {
-      background: #888;
+    background: #888;
 }
+/* start of header */
 header {
     background: linear-gradient( #444, #790a02, #333); 
     position: sticky;
@@ -24,14 +25,21 @@ header a:hover {
 header ul {
     padding: 15px 0;
     text-align: center;
+    margin: 0;
 }
 header li {
     display: inline;
     padding: 10px;
     font-size: 25px;
 }
+@media (max-width: 613px) {
+    header li {
+        font-size: 18px
+  }
+}
+/* end of header */
+/* start of hero */
 .hero {
-
     z-index: 1;
     background: #888;
 } 
@@ -51,7 +59,6 @@ header li {
 .pic {
     padding-top: 30px;
     padding-bottom: 40px;
-
 }
 .pic img{
     width: 289px;
@@ -72,11 +79,10 @@ header li {
  }
 @media (max-width: 766px) {
     .hero {
-       text-align: center;
-       
+        text-align: center;
     }
     .pic img {
-       margin: auto;
+        margin: auto;
     }
 }
 .hero img {
@@ -100,7 +106,7 @@ header li {
 }
 @media (max-width: 761px) {
     .hero h1 {
-       font-size: 30px;
+        font-size: 30px;
     }
     .hero h2 {
         font-size: 25px;
@@ -108,7 +114,7 @@ header li {
 }
 @media (max-width: 1024px) {
     .hero h1 {
-       font-size: 40px;
+        font-size: 40px;
     }
     .hero h2 {
         font-size: 25px;
@@ -154,10 +160,8 @@ header li {
     transform: rotateY(225deg);
     background: linear-gradient(-21deg, #999,#888 );
 }
-.code img {
-    border: none;
-    box-shadow: none;
-}
+/* end of hero  */
+/* start of about  */
 .about {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -174,17 +178,22 @@ header li {
 }
 .about p {
     color: #fff;
+    font-size: 20px
 }
+@media (max-width: 769px) {
+    .about p {
+        font-size: 14px;
+    }
+}
+/* end of about  */
+/* start of main */
 main {
     background: #444;
-    z-index: 2;
-    padding: 20px;
+    padding-top: 20px;
     font-family: 'Exo', sans-serif;
-   
 }
 main img{
     height: 100px;
-
 }
 main p {
     text-align: center;
@@ -193,7 +202,7 @@ main p {
     font-size: 20px;
     padding-top: 10px;
 }
-.project-title p {
+.project-title h2 {
     text-align: center;
     color: #fff;
     text-transform: capitalize;
@@ -207,8 +216,38 @@ main p {
     box-shadow: 10px 15px 10px #000, -5px 0px 10px #000;
     overflow: hidden;
 }
-
-@media (min-width: 1002px) and (max-width: 1200px) {
+.flash div {
+	position: relative;
+}
+.flash div::before {
+	position: absolute;
+	top: 10%;
+	left: 0%;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(114, 114, 114, 0.2);
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.flash div:hover::before {
+	animation: circle .75s;
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
     .project {
         margin: 40px;
     }
@@ -218,7 +257,6 @@ main p {
         margin: 31px;
    }
 }
-
 .project :hover {
     left: 0;
     text-decoration: none;
@@ -246,6 +284,8 @@ main p {
     color: #000;
     transition: all 0.4s ease-in-out;
 }
+/* end of main  */
+/* start of footer  */
 footer {
     background: #790a02;
     font-family: 'Exo', sans-serif;
@@ -255,10 +295,21 @@ footer {
         text-align: center;
     }
 }
+@media (max-width: 770px) {
+    footer {
+        padding-left: 0;
+    }
+}
 footer p {
     color: #fff;
     font-size: 25px;
     padding-top: 15px;
+}
+@media (max-width: 1197px) {
+    footer p {
+        font-size: 20px;
+        padding-left: 20px;
+    }
 }
 footer a {
     color: #fff;
@@ -271,9 +322,11 @@ footer a:hover {
 footer ul {
     padding: 15px 0;
     text-align: center;
+    padding-left: 31px;
 }
 footer li {
     display: inline;
     padding: 10px;
     font-size: 35px;
 }
+/* end of footer  */
