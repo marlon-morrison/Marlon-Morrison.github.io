@@ -348,9 +348,11 @@ footer p {
         padding-left: 20px;
     }
 }
+footer span {
+    font-size: 23px;
+}
 footer a {
     color: #fff;
-    font-size: 35px;
     text-decoration: none;
 }
 footer a:hover {
@@ -360,8 +362,12 @@ footer a:hover {
 }
 footer ul {
     padding: 15px 0;
-    text-align: center;
-    padding-left: 31px;
+    text-align: right;
+}
+@media (max-width: 767px) {
+    footer ul {
+text-align: center;
+    }
 }
 footer li {
     display: inline;
