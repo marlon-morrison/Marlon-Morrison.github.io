@@ -324,6 +324,26 @@ main .lock {
     transition: all 0.4s ease-in-out;
 }
 /* end of main  */
+/* project page  */
+.javascript{
+    display: block;
+}
+.html{
+    display: block;
+}
+.cPP{
+    display: block;
+}
+.python{
+    display: block;
+}
+.java{
+    display: block;
+}
+.visualS{
+    display: block;
+}
+/* end of project page  */
 /* start of footer  */
 footer {
     background: #790a02;
