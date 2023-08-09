@@ -323,6 +323,21 @@ main .lock {
     color: #000;
     transition: all 0.4s ease-in-out;
 }
+.aProject {
+    border-left: #730901 solid 7px;
+    background: #888888;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 9px;
+}
+.aProject a {
+    color: floralwhite;
+}
+.aProject a:hover {
+    color: #000;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+}
 /* end of main  */
 /* project page  */
 .javascript{
