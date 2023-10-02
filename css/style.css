@@ -358,6 +358,9 @@ main .lock {
 .visualS{
     display: block;
 }
+form label {
+    color: #fff;
+}
 /* end of project page  */
 /* start of footer  */
 footer {
